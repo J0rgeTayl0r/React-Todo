@@ -4,9 +4,7 @@ const Todo = props => {
     return (
         <div
             style={props.todo.completed ? {textDecoration:'line-through'} : null}
-            onClick={() => { props.toggleCompleted(props.todo.id) }}
-            className={props.todo.completed ?
-                'completed' : 'list-item'}
+            onClick={() => { props.toggleCompleted(props.todo.id) }}  
         >
             {props.todo.todo}
         </div>
